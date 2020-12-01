@@ -1,10 +1,15 @@
 const readline = require('readline-sync')
+const robos = {
+    text: require('./robos/text.js')
+}
 
-function start(){
+async function start(){
     const content = {}
 
     content.searchTerm = askAndReturnSearchTerm()
     content.prefix = askAndReturnPrefix()
+    
+    await robos.text(content)
 
     function askAndReturnSearchTerm(){
         return readline.question('Type a wikipedia search: ')
