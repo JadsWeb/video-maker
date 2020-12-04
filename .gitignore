@@ -78,6 +78,11 @@ typings/
 # Next.js build output
 .next
 
+# credentials
+credentials/*.json
+
+content.json
+
 # Nuxt.js build / generate output
 .nuxt
 dist
